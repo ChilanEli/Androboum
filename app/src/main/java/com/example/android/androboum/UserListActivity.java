@@ -48,6 +48,7 @@ public class UserListActivity extends AppCompatActivity {
         ListView listeView = (ListView) findViewById(R.id.liste);
         final MyArrayAdapter adapter = new MyArrayAdapter(this,android.R.layout.simple_list_item_1, userList);
         listeView.setAdapter(adapter);
+        listeView.setAdapter(adapter);
         DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
         ValueEventListener postListener = new ValueEventListener() {
             @Override

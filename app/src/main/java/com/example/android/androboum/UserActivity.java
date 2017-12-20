@@ -73,6 +73,8 @@ public class UserActivity extends AppCompatActivity {
             TextView textView = (TextView) findViewById(R.id.email);
             textView.setText(auth.getCurrentUser().getEmail());
             downloadImage();
+            setUser();
+            updateProfil(user);
         }
         else
         {
@@ -99,8 +101,6 @@ public class UserActivity extends AppCompatActivity {
                 return true;
             }
         });
-        setUser();
-        updateProfil(user);
     }
 
     // cette méthode est appelée quand l'appel StartActivityForResult est terminé
@@ -115,6 +115,8 @@ public class UserActivity extends AppCompatActivity {
                 TextView textView = (TextView) findViewById(R.id.email);
                 textView.setText(response.getEmail());
                 downloadImage();
+                setUser();
+                updateProfil(user);
 
                 ImageView imageView = (ImageView) findViewById(R.id.imageView2);
                 imageView.setOnLongClickListener(new View.OnLongClickListener() {
