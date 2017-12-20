@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -94,6 +95,9 @@ public class UserListActivity extends AppCompatActivity {
         final List<Profil> userList = new ArrayList<>();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_list);
+
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(myToolbar);
 
         ListView listeView = (ListView) findViewById(R.id.liste);
         adapter = new MyArrayAdapter(this,android.R.layout.simple_list_item_1, userList);
