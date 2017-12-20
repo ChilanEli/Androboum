@@ -10,4 +10,5 @@
     <string name="email">Email</string>
     <string name="imageUploaded">L\'image a été correctement téléchargé</string>
     <string name="listusers">LISTE DES UTILISATEURS</string>
+    <string name="filter_dialog_title">Filtre</string>
 </resources>
