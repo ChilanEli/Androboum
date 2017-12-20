@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Androboum</string>
+    <string name="title">L\'application qui fait boum !</string>
+    <string name="author">\@Chilan-Eli YUKSEL - 2017</string>
+    <string name="start">DÉMARRER</string>
+    <string name="facebook_application_id" translatable="false">1809914232370472</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb1809914232370472</string>
+    <string name="action_logout">DÉCONNECTION</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="email">Email</string>
+    <string name="imageUploaded">L\'image a été correctement téléchargé</string>
+    <string name="listusers">LISTE DES UTILISATEURS</string>
+</resources>
